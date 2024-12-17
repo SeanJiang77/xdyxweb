@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            color: #555;
+        }
+        .product-card p {
+            margin: 5px 0;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<h1>Product List</h1>
+<div id="product-list">Loading...</div>
+
+<!-- Firebase SDK -->
+<script type="module">
+    // Import the Firebase SDK
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+
+    // Your Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyDErrWP8ZsZWzR9ipj6Mch_1wQu1IphN6Q",
+        authDomain: "careful-drummer-445015-s6.firebaseapp.com",
+        projectId: "careful-drummer-445015-s6",
+        storageBucket: "careful-drummer-445015-s6.appspot.com",
+        messagingSenderId: "1000903650024",
+        appId: "1:1000903650024:web:1cae8201425f069adb75d"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+</script>
+
+<!-- External Script -->
+<script src="app.js"></script>
+</body>
+</html>
